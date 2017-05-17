@@ -8,7 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	culqi "github.com/culqi/culqi-go"
-   	charge "github.com/culqi/culqi-go/charge"
+   	charge "github.com/lokitold/culqi-go/charge"
 	"encoding/json"
 )
 

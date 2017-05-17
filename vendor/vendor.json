@@ -33,6 +33,12 @@
 			"revision": "4cc2de6207f4128624cbdd16be30f64966c67c08"
 		},
 		{
+			"checksumSHA1": "9WMjgQ4ctFPjKEnyzMpMJ1yU5DQ=",
+			"path": "github.com/lokitold/culqi-go/charge",
+			"revision": "359e1331df03edada3df899cc2d73fd45c998c18",
+			"revisionTime": "2017-05-17T16:54:51Z"
+		},
+		{
 			"checksumSHA1": "ZUOd8OUOp+xdpB7p4w/O86Y8wyc=",
 			"path": "github.com/manucorporat/sse",
 			"revision": "c142f0f1baea5cef7f98a8a6c222f6134368c1f5"
