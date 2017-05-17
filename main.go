@@ -7,9 +7,9 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	//culqi "github.com/culqi/culqi-go"
-//   	charge "github.com/culqi/culqi-go/charge"
-//	   "encoding/json"
+	culqi "github.com/culqi/culqi-go"
+   	charge "github.com/culqi/culqi-go/charge"
+	"encoding/json"
 )
 
 func main() {
@@ -36,7 +36,7 @@ func main() {
 		
 		token := c.PostForm("token")
 		fmt.Printf("\nResponse Status Code: %v", token)
-		/*
+
 		config := &culqi.Config{
 			MerchantCode:   "pk_test_Rp2uV5dXI3quFq2X",  // Código de Comercio
 			ApiKey:   "sk_test_8GC9UJfifciOurwW", // API Key
@@ -89,7 +89,7 @@ func main() {
 		//
 
 		fmt.Printf("\nResponse Body Object: %v", jsontype.Object)
-		*/
+		
 		//6. response json
 		c.JSON(200, gin.H{
 			//"objeto": jsontype.Object,
