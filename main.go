@@ -89,11 +89,10 @@ func main() {
 		//
 
 		fmt.Printf("\nResponse Body Object: %v", jsontype.Object)
-		
+
 		//6. response json
 		c.JSON(200, gin.H{
-			//"objeto": jsontype.Object,
-			"objeto": "hola",
+			"objeto": jsontype.Object,
 		})
 
 		//c.HTML(http.StatusOK, "culqi.tmpl.html", nil)
