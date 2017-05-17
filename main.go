@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 	"os"
-//	"fmt"
+	"fmt"
 
 	"github.com/gin-gonic/gin"
 	//culqi "github.com/culqi/culqi-go"
@@ -31,12 +31,12 @@ func main() {
 	router.GET("/culqi", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "culqi.tmpl.html", nil)
 	})
-/*
+
 	router.POST("/tarjeta", func(c *gin.Context) {
 		
 		token := c.PostForm("token")
 		fmt.Printf("\nResponse Status Code: %v", token)
-
+		/*
 		config := &culqi.Config{
 			MerchantCode:   "pk_test_Rp2uV5dXI3quFq2X",  // Código de Comercio
 			ApiKey:   "sk_test_8GC9UJfifciOurwW", // API Key
@@ -75,7 +75,7 @@ func main() {
 		fmt.Printf("\nResponse Time: %v", resp.Time())
 		fmt.Printf("\nResponse Recevied At: %v", resp.ReceivedAt())
 		fmt.Printf("\nResponse Body: %v", resp)
-		
+
 		// 5. convertir response en variable de go
 		type TokenResponse struct {
 			// Object: "token"
@@ -89,14 +89,15 @@ func main() {
 		//
 
 		fmt.Printf("\nResponse Body Object: %v", jsontype.Object)
-
+		*/
 		//6. response json
 		c.JSON(200, gin.H{
-			"objeto": jsontype.Object,
+			//"objeto": jsontype.Object,
+			"objeto": "hola",
 		})
 
 		//c.HTML(http.StatusOK, "culqi.tmpl.html", nil)
 	})
-*/
+
 	router.Run(":" + port)
 }
