@@ -1,0 +1,95 @@
+{
+	"ImportPath": "github.com/heroku/go-getting-started",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "culqi/culqi-go",
+			"Rev": "004e91a9a8d0bbc3a812178d8d127700bdd8f834"
+		},
+		{
+			"ImportPath": "culqi/culqi-go/charge",
+			"Rev": "004e91a9a8d0bbc3a812178d8d127700bdd8f834"
+		},
+		{
+			"ImportPath": "culqi/culqi-go/token",
+			"Rev": "004e91a9a8d0bbc3a812178d8d127700bdd8f834"
+		},
+		{
+			"ImportPath": "github.com/culqi/culqi-go",
+			"Rev": "004e91a9a8d0bbc3a812178d8d127700bdd8f834"
+		},
+		{
+			"ImportPath": "github.com/culqi/culqi-go/charge",
+			"Rev": "004e91a9a8d0bbc3a812178d8d127700bdd8f834"
+		},
+		{
+			"ImportPath": "github.com/culqi/culqi-go/token",
+			"Rev": "004e91a9a8d0bbc3a812178d8d127700bdd8f834"
+		},
+		{
+			"ImportPath": "github.com/gin-gonic/gin",
+			"Comment": "v1.1.4-1-gd5b353c",
+			"Rev": "d5b353c5d5a560322e6d96121c814115562501f7"
+		},
+		{
+			"ImportPath": "github.com/gin-gonic/gin/binding",
+			"Comment": "v1.1.4-1-gd5b353c",
+			"Rev": "d5b353c5d5a560322e6d96121c814115562501f7"
+		},
+		{
+			"ImportPath": "github.com/gin-gonic/gin/render",
+			"Comment": "v1.1.4-1-gd5b353c",
+			"Rev": "d5b353c5d5a560322e6d96121c814115562501f7"
+		},
+		{
+			"ImportPath": "github.com/go-resty/resty",
+			"Comment": "v0.11-3-g2b803d0",
+			"Rev": "2b803d0e2dba5406a9ab6683deb9504a72338db1"
+		},
+		{
+			"ImportPath": "github.com/manucorporat/sse",
+			"Rev": "ee05b128a739a0fb76c7ebd3ae4810c1de808d6d"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-colorable",
+			"Comment": "v0.0.7-24-gded68f7",
+			"Rev": "ded68f7a9561c023e790de24279db7ebf473ea80"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-isatty",
+			"Comment": "v0.0.2",
+			"Rev": "fc9e8d8ef48496124e79ae0df75490096eccf6fe"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "34057069f4ab13dc4433c68d368737ebeafcccdc"
+		},
+		{
+			"ImportPath": "golang.org/x/net/proxy",
+			"Rev": "34057069f4ab13dc4433c68d368737ebeafcccdc"
+		},
+		{
+			"ImportPath": "golang.org/x/net/publicsuffix",
+			"Rev": "34057069f4ab13dc4433c68d368737ebeafcccdc"
+		},
+		{
+			"ImportPath": "gopkg.in/bluesuncorp/validator.v5",
+			"Comment": "v5.12",
+			"Rev": "d5acf1dac43705f8bfbb71d878e290e2bed3950b"
+		},
+		{
+			"ImportPath": "gopkg.in/go-resty/resty.v0",
+			"Comment": "v0.11",
+			"Rev": "c45c7bcc0000d1a9ac1b119b2e6043c6540eedea"
+		},
+		{
+			"ImportPath": "gopkg.in/resty.v0",
+			"Comment": "v0.11",
+			"Rev": "c45c7bcc0000d1a9ac1b119b2e6043c6540eedea"
+		}
+	]
+}
