@@ -1,0 +1,69 @@
+<html>
+{{template "header.tmpl.html"}}
+
+<body>
+  {{template "nav.tmpl.html"}}
+
+  <div class="container">
+    <div class="row">
+      <div style="text-align: center;padding:20px">
+        <a href="#" id="buyButton" class="btn btn-primary" role="button">Pagar ahora</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://checkout.culqi.com/v2"></script>
+  <script>
+    Culqi.publicKey = 'pk_test_Rp2uV5dXI3quFq2X'; // Colocar tu Código de Comercio (llave pública)
+    Culqi.settings({
+        title: 'Culqi Store',
+        currency: 'PEN', // Código de la moneda, 'PEN' o 'USD'
+        description: 'Polo/remera Culqi lover', // Descripción acerca de la compra
+        amount: 3500 // Monto de la compra (sin punto decimal, en este caso 35.00 soles)
+    });
+</script>
+  <script>
+    $('#buyButton').on('click', function (e) {
+        // Abre el formulario con las opciones de Culqi.settings
+        Culqi.open();
+        e.preventDefault();
+    });
+    // Recibimos el token desde los servidores de Culqi
+    function culqi() {
+        if (Culqi.token) { // Token creado exitosamente!
+            // Obtener el token ID
+            var token = Culqi.token.id;
+            console.log('Se ha creado un token: ' + token);
+            $.post("../tarjeta", // Ruta hacia donde enviaremos el token vía POST
+                    {token: Culqi.token.id, id_producto: 1510},
+                    function (data, status) {
+                        console.log(data);
+
+                        //data = JSON.parse(data); //convertir data json a objeto js
+
+                        //console.log(data);
+
+                        if (data.objeto == "charge") {
+                            alert("Cargo realizado exitosamente");
+                        } else {
+
+                            console.log(data);
+                            //alert(data.mensaje_usuario);
+                        }
+
+
+                    });
+
+        }
+        else { // Hubo algun problema!
+            // Mostramos JSON de objeto error en consola
+            console.log(Culqi.error);
+            alert(Culqi.error.mensaje);
+        }
+    }
+    ;
+</script>
+
+</body>
+
+</html>
