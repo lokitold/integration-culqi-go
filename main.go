@@ -4,12 +4,12 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"fmt"
+//	"fmt"
 
 	"github.com/gin-gonic/gin"
-	culqi "github.com/culqi/culqi-go"
-   	charge "github.com/culqi/culqi-go/charge"
-	   "encoding/json"
+	//culqi "github.com/culqi/culqi-go"
+//   	charge "github.com/culqi/culqi-go/charge"
+//	   "encoding/json"
 )
 
 func main() {
@@ -31,7 +31,7 @@ func main() {
 	router.GET("/culqi", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "culqi.tmpl.html", nil)
 	})
-
+/*
 	router.POST("/tarjeta", func(c *gin.Context) {
 		
 		token := c.PostForm("token")
@@ -97,6 +97,6 @@ func main() {
 
 		//c.HTML(http.StatusOK, "culqi.tmpl.html", nil)
 	})
-
+*/
 	router.Run(":" + port)
 }
