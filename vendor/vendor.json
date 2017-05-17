@@ -3,6 +3,18 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "/Mj1GekRhVZt0gBvMrOPTcuUcxs=",
+			"path": "github.com/culqi/culqi-go",
+			"revision": "004e91a9a8d0bbc3a812178d8d127700bdd8f834",
+			"revisionTime": "2017-01-18T00:05:55Z"
+		},
+		{
+			"checksumSHA1": "tCyj+uMNXUPLwdK28kk6+3hH5Fc=",
+			"path": "github.com/culqi/culqi-go/charge",
+			"revision": "004e91a9a8d0bbc3a812178d8d127700bdd8f834",
+			"revisionTime": "2017-01-18T00:05:55Z"
+		},
+		{
 			"checksumSHA1": "Qq7Gzany1n6gK6hpZQq9UXFhGGo=",
 			"comment": "v1.0rc1-110-g4cc2de6",
 			"path": "github.com/gin-gonic/gin",
@@ -41,16 +53,22 @@
 			"revision": "d9558e5c97f85372afee28cf2b6059d7d3818919"
 		},
 		{
+			"checksumSHA1": "O6yCEoGr0NU7ZM60PmyzBG+OC9s=",
+			"path": "golang.org/x/net/publicsuffix",
+			"revision": "34057069f4ab13dc4433c68d368737ebeafcccdc",
+			"revisionTime": "2017-05-09T19:22:37Z"
+		},
+		{
 			"checksumSHA1": "P7dBpV3QA/3GJWGNwb9Hn3BzCQs=",
 			"comment": "v5.9.1",
 			"path": "gopkg.in/bluesuncorp/validator.v5",
 			"revision": "d627af88ac021317a280d320986282a6dc97549a"
 		},
 		{
-			"checksumSHA1": "P7dBpV3QA/3GJWGNwb9Hn3BzCQs=",
-			"comment": "v5.9.1",
-			"path": "github.com/culqi/culqi-go",
-			"revision": "004e91a9a8d0bbc3a812178d8d127700bdd8f834"
+			"checksumSHA1": "CSb3aeUBe0ckuXYgnCPv5QycrC8=",
+			"path": "gopkg.in/resty.v0",
+			"revision": "c45c7bcc0000d1a9ac1b119b2e6043c6540eedea",
+			"revisionTime": "2017-03-20T19:35:04Z"
 		}
 	],
 	"rootPath": "github.com/heroku/go-getting-started"
