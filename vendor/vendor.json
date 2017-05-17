@@ -49,7 +49,7 @@
 		{
 			"checksumSHA1": "P7dBpV3QA/3GJWGNwb9Hn3BzCQs=",
 			"comment": "v5.9.1",
-			"path": "github.com/culqi/culqi-go",
+			"path": "github.com/culqi/culqi-go/charge",
 			"revision": "004e91a9a8d0bbc3a812178d8d127700bdd8f834"
 		}
 	],
